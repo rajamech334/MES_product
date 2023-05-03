@@ -1,23 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+
+import TopNavbar from './components/TopNavbar/TopNavbar';
+import Collection from './components/OPcard/Collection';
+import Header from './components/TopNavbar/Header';
+// import Dropdown from './components/TopNavbar/Dropdown';
+// import { HeatMap } from './components/HeatMap/HeatMap';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <TopNavbar></TopNavbar>
+     <Collection className="collection"></Collection>
+     <div className='Filter'>
+       <Header name ='Zone Selection'></Header>
+       <Header name ='Line selection'></Header>
+     </div>
+     <div>
+      
+     </div>
     </div>
   );
 }
